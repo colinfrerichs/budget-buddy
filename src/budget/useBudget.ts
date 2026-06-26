@@ -19,8 +19,16 @@ export const useBudget = () => {
         })
     }
 
+    const deleteIncome = (id: string) => {
+        dispatch({
+            type: "DELETE_INCOME",
+            payload: id,
+        })
+    }
+
     return {
         ...state,
         addIncome,
+        deleteIncome,
     }
 }
