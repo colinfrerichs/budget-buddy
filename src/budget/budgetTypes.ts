@@ -8,7 +8,7 @@ export interface IncomeStream {
 export interface Transaction {
     id: string;
     title: string;
-    amount: string;
+    amount: number;
     type: "income" | "expense";
     date: string;
 }
